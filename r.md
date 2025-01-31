@@ -37,7 +37,7 @@ L’application doit comporter une **fenêtre d’accueil** avec un menu princip
    - **Modifier un film** : Permet de modifier les informations d’un film existant.
    - **Supprimer un film** : Permet de supprimer un film de la liste.
    - **Afficher la liste des films** : Affiche tous les films disponibles.
-
+Gestion
 ### 2. Gestion des salles de diffusion
    - **Ajouter une salle** : Permet d’ajouter une nouvelle salle de diffusion.
    - **Modifier une salle** : Permet de modifier les informations d’une salle existante.

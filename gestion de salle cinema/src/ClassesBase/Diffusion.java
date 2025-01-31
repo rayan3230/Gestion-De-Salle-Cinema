@@ -4,6 +4,7 @@ import java.sql.Date;
 import java.time.LocalTime;
 
 public class Diffusion {
+    public int idDiffusion = 0;
     public int year;
     public int month;
     public int jour;
@@ -17,7 +18,9 @@ public class Diffusion {
     public int minutefin;
     public LocalTime timefin = LocalTime.of(this.hourfin, this.minutefin);
 
-    public Diffusion(Date date, Film film, Salle salle, int hourdebut, int minutedebut, int hourfin, int minutefin) {
+    public Diffusion(Date date, Film film, Salle salle, int hourdebut, int minutedebut, int hourfin, int  ) {
+        CalculateFixTime();
+        this.idDiffusion++;
         this.date = date;
         this.film = film;
         this.salle = salle;
@@ -26,9 +29,13 @@ public class Diffusion {
         this.hourfin = hourfin;
         this.minutefin = minutefin;
 
+        
+    }
+
+    public void CalculateFixTime(){
         if (this.minutedebut + film.dureeFilm % 60 > 60) {
 
-            this.minutefin = this.minutedebut + film.dureeFilm % 60;
+            this.minutefin = this.minutedebut - 60 + film.dureeFilm % 60;
             this.hourfin = this.hourdebut + film.dureeFilm / 60 + 1;
 
         } else {
