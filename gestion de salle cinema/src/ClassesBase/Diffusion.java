@@ -20,6 +20,7 @@ public class Diffusion {
     
 
     public Diffusion(Date date, Film film, Salle salle, LocalTime timedebut) {
+        CalculateTimeFin();
         this.date = date;
         this.film = film;
         this.salle = salle;
