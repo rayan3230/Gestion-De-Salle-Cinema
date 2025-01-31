@@ -6,13 +6,12 @@ public class Film {
     public String genre;
 
     enum genre {
-        Vo,
-        Vf
+        Vo, Vf
     }
 
-    public Film(String titreFilm, int duréeFilm, String genre) {
+    public Film(String titreFilm, int dureeFilm, String genre) {
         TitreFilm = titreFilm;
-        this.dureeFilm = duréeFilm;
+        this.dureeFilm = dureeFilm;
         this.genre = genre;
     }
 }
