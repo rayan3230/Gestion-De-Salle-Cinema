@@ -1,15 +1,14 @@
 package ClassesBase;
 
 public class Salle {
-    public int idOfSalle;
-    public int capaciteNormal;
-    public int capaciteVIP;
-    
-    
-    public Salle(int idOfSalle, int capacitéNormal, int capacitéVIP) {
-        this.idOfSalle = idOfSalle;
-        this.capaciteNormal = capacitéNormal;
-        this.capaciteVIP = capacitéVIP;
+    public int SalleId;
+    public int NormalCapacity;
+    public int VipCapacity;
+
+    public Salle(int SalleId, int NormalCapacity, int VipCapacity) {
+        this.SalleId = SalleId;
+        this.NormalCapacity = NormalCapacity;
+        this.VipCapacity = VipCapacity;
     }
 
 }
