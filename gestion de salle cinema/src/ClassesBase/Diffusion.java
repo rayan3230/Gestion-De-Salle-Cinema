@@ -18,7 +18,7 @@ public class Diffusion {
     public int minutefin;
     public LocalTime timefin = LocalTime.of(this.hourfin, this.minutefin);
 
-    public Diffusion(Date date, Film film, Salle salle, int hourdebut, int minutedebut, int hourfin, int  ) {
+    public Diffusion(Date date, Film film, Salle salle, int hourdebut, int minutedebut, int hourfin, int idDiffusion) {
         CalculateFixTime();
         this.idDiffusion++;
         this.date = date;

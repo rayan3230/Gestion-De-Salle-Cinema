@@ -15,5 +15,12 @@ public class GestionDiffusions {
         Diffusions.add(newDiff);
     }
 
-    public void ModifierDiffusion(
+    public void ModifierDiffusion(int idDiffusion){
+        for (Diffusion diffusion : Diffusions) {
+            if (diffusion.idDiffusion == idDiffusion) {
+                
+                return;
+            }
+        }
+    }
 }
