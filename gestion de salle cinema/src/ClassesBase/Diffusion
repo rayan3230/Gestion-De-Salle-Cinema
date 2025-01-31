@@ -17,4 +17,11 @@ public class Diffusion {
         int hourfin = this.hourdebut + film.duree / 60
     }
     public LocalTime timefin = LocalTime(this.hourfin, this.minutefin);
+
+    public Diffusion(Date date, Film film , Salle salle, LocalTime timedebut){
+        this.date = date;
+        this.film = film;
+        this.salle = salle;
+        this.timedebut = timedebut;
+    }
 }
