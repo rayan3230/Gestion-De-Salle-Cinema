@@ -9,6 +9,7 @@ import java.util.ArrayList;
 public class GestionDiffusions {
 
     ArrayList<Diffusion> Diffusions = new ArrayList<Diffusion>();
+    public int DiffusionCount = -1;
 
     public void addDiffusion(Date date, Film film, Salle salle, int hourdebut, int minutedebut, int hourfin,
             int minutefin) {
