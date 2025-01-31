@@ -17,7 +17,7 @@ public class GestionFilm {
             if (film.TitreFilm.equals(ActualtitreFilm)) 
             {
                 film.TitreFilm = NewtitreFilm;
-                film.duréeFilm = duréeFilm;
+                film.dureeFilm = duréeFilm;
                 film.genre = genre;
                 return;
             }
@@ -44,7 +44,7 @@ public class GestionFilm {
 
     public void displayFilms(){
         for (Film film : films) {
-            System.out.println("Titre: "+film.TitreFilm+" Durée: "+film.duréeFilm+" Genre: "+film.genre);
+            System.out.println("Titre: "+film.TitreFilm+" Durée: "+film.dureeFilm+" Genre: "+film.genre);
         }
     }   
 }
