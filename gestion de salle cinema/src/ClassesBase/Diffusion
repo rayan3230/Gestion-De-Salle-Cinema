@@ -1,3 +1,5 @@
+package ClassesBase;
+
 import java.util.Date;
 import java.time.LocalTime;
 
@@ -14,5 +16,5 @@ public class Diffusion {
         int minutefin = this.minutedebut + film.duree % 60;
         int hourfin = this.hourdebut + film.duree / 60
     }
-    public LocalTime timefin = LocalTime(hourfin, minutefin);
+    public LocalTime timefin = LocalTime(this.hourfin, this.minutefin);
 }
