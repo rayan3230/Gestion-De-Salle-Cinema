@@ -18,21 +18,15 @@ public class Diffusion {
     public int minutefin;
     public LocalTime timefin = LocalTime.of(this.hourfin, this.minutefin);
 
-    public Diffusion(Date date, Film film, Salle salle, int hourdebut, int minutedebut, int hourfin, int idDiffusion) {
-        CalculateFixTime();
+    public Diffusion(Date date, Film film, Salle salle, int hourdebut, int minutedebut, int idDiffusion) {
+
         this.idDiffusion++;
         this.date = date;
         this.film = film;
         this.salle = salle;
         this.hourdebut = hourdebut;
         this.minutedebut = minutedebut;
-        this.hourfin = hourfin;
-        this.minutefin = minutefin;
 
-        
-    }
-
-    public void CalculateFixTime(){
         if (this.minutedebut + film.dureeFilm % 60 > 60) {
 
             this.minutefin = this.minutedebut - 60 + film.dureeFilm % 60;
@@ -43,5 +37,6 @@ public class Diffusion {
             this.minutefin = this.minutedebut + film.dureeFilm % 60;
             this.hourfin = this.hourdebut + film.dureeFilm / 60;
         }
+
     }
 }
