@@ -60,11 +60,26 @@ public class GestionDeSalle {
     public void AfficherSalle() {
         for (Salle salle : salles) {
             if (salle.Available == true) {
-                System.out.println(salle.SalleId + " - La salle est disponible");
+                System.out.println(salle.SalleId + " - capacite normal  : " + salle.NormalCapacity + "capacite VIP  :  "
+                        + salle.VipCapacity + " --- La salle est disponible ---");
             } else {
-                System.out.println(salle.SalleId + " - La salle n'est pas disponible");
+                System.out.println(salle.SalleId + " - capacite normal  : " + salle.NormalCapacity + "capacite VIP  :  "
+                        + salle.VipCapacity + " --- La salle n'est pas disponible ---");
             }
             return;
         }
+    }
+
+    public void isSalleDispo(int SalleId) {
+        if (salles.get(SalleId).Available == true) {
+            System.out.println(salles.get(SalleId).SalleId + " - capacite normal  : "
+                    + salles.get(SalleId).NormalCapacity + "capacite VIP  :  "
+                    + salles.get(SalleId).VipCapacity + " --- La salle est disponible ---");
+        } else {
+            System.out.println(salles.get(SalleId).SalleId + " - capacite normal  : "
+                    + salles.get(SalleId).NormalCapacity + "capacite VIP  :  "
+                    + salles.get(SalleId).VipCapacity + " --- La salle n'est pas disponible ---");
+        }
+        return;
     }
 }
