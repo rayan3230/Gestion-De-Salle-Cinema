@@ -1,35 +1,26 @@
 package Gestion_des_Classes;
 
-import ClassesBase.Diffusion;
-
 public class GestionBills {
    
-    public void ReserverNormal(int numbilletNormal, int Time) {
-
+    public void ReserverNormal(int numbilletNormal) {
+        
         if (numbilletNormal == 0) {
             System.out.println("No tickets left for this diffusion");
         } else {
 
             numbilletNormal--;
-            System.out.println("Thanks for buying the ticket");
-            System.out.println("Your diffusion is planed to: " + Time + " .");
-
-        }
-
+                System.out.println("Thanks for buying the ticket");
+            }
     }
 
-    public void ReserverVIP(int numbilletVip, int Time) {
-
+    public void ReserverVIP(int numbilletVip) {
         if (numbilletVip == 0) {
             System.out.println("No tickets left for this diffusion");
         } else {
 
             numbilletVip--;
             System.out.println("Thanks for buying the ticket");
-            System.out.println("Your diffusion is planed to: " + Time + " .");
-
         }
-
     }
 
     public void AnnuleNormal(int numbillet) {
