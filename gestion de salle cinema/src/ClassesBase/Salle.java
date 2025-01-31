@@ -6,8 +6,7 @@ public class Salle {
     public int VipCapacity;
     public Boolean Available;
 
-    public Salle(int SalleId, int NormalCapacity, int VipCapacity) {
-        this.SalleId = SalleId;
+    public Salle(int NormalCapacity, int VipCapacity) {
         this.NormalCapacity = NormalCapacity;
         this.VipCapacity = VipCapacity;
     }
