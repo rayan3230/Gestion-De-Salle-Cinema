@@ -1,0 +1,18 @@
+import java.util.Date;
+import java.time.LocalTime;
+
+public class Diffusion {
+
+    public Date date = new Date(int year, int month, int jour);
+    public Film film;
+    public Salle salle;
+    public LocalTime timedebut = LocalTime(int hourdebut, int minutedebut);
+    if(minutedebut + film.duree % 60 > 60){
+        int minutefin = this.minutedebut + film.duree % 60;
+        int hourfin = this.hourdebut + film.duree / 60 + 1;
+    }else{
+        int minutefin = this.minutedebut + film.duree % 60;
+        int hourfin = this.hourdebut + film.duree / 60
+    }
+    public LocalTime timefin = LocalTime(hourfin, minutefin);
+}
