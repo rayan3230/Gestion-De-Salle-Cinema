@@ -4,6 +4,7 @@ public class Salle {
     public int SalleId;
     public int NormalCapacity;
     public int VipCapacity;
+    public Boolean Available;
 
     public Salle(int SalleId, int NormalCapacity, int VipCapacity) {
         this.SalleId = SalleId;
