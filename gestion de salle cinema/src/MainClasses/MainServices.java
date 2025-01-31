@@ -40,18 +40,19 @@ public class MainServices {
         while (true) {
             switch (choix) {
                 case 1:
-                    System.out.println("1- Ajouter une salle");
-                    System.out.println("2- Modifier une salle");
-                    System.out.println("3- Mettre hors service une salle");
-                    System.out.println("4- Remettre en service une salle");
-                    System.out.println("5- Afficher les salles disponibles");
-                    System.out.println("6- Afficher les salles");
-                    System.out.println("7- Retour");
-                    System.out.println("");
-                    System.out.print("Veuillez choisir une option :   ");
 
                     int choixSalle;
                     do {
+                        System.out.println("1- Ajouter une salle");
+                        System.out.println("2- Modifier une salle");
+                        System.out.println("3- Mettre hors service une salle");
+                        System.out.println("4- Remettre en service une salle");
+                        System.out.println("5- Afficher les salles disponibles");
+                        System.out.println("6- Afficher les salles");
+                        System.out.println("7- Retour");
+                        System.out.println("");
+                        System.out.print("Veuillez choisir une option :   ");
+
                         choixSalle = Scan.nextInt();
                         if (choixSalle < 1 || choixSalle > 7) {
                             System.out.println("Veuillez entrer une option valide");
@@ -112,16 +113,17 @@ public class MainServices {
                     break;
 
                 case 2:
-                    System.out.println("1- Ajouter un film");
-                    System.out.println("2- Modifier un film");
-                    System.out.println("3- Supprimer un film");
-                    System.out.println("4- Afficher les films");
-                    System.out.println("5- Retour");
-                    System.out.println("");
-                    System.out.print("Veuillez choisir une option :   ");
 
                     int choixFilm;
                     do {
+                        System.out.println("1- Ajouter un film");
+                        System.out.println("2- Modifier un film");
+                        System.out.println("3- Supprimer un film");
+                        System.out.println("4- Afficher les films");
+                        System.out.println("5- Retour");
+                        System.out.println("");
+                        System.out.print("Veuillez choisir une option :   ");
+
                         choixFilm = Scan.nextInt();
                         if (choixFilm < 1 || choixFilm > 5) {
                             System.out.println("Veuillez entrer une option valide");
@@ -172,17 +174,20 @@ public class MainServices {
                             System.out.println("");
                             break;
                     }
+                    System.out.println("");
+                    break;
 
                 case 3:
-                    System.out.println("1- Créer une diffusion");
-                    System.out.println("2- Modifier une diffusion");
-                    System.out.println("3- Supprimer une diffusion");
-                    System.out.println("4- Retour");
-                    System.out.println("");
-                    System.out.print("Veuillez choisir une option :   ");
 
                     int choixDiffusion;
                     do {
+                        System.out.println("1- Créer une diffusion");
+                        System.out.println("2- Modifier une diffusion");
+                        System.out.println("3- Supprimer une diffusion");
+                        System.out.println("4- Retour");
+                        System.out.println("");
+                        System.out.print("Veuillez choisir une option :   ");
+
                         choixDiffusion = Scan.nextInt();
                         if (choixDiffusion < 1 || choixDiffusion > 4) {
                             System.out.println("Veuillez entrer une option valide");
@@ -251,6 +256,7 @@ public class MainServices {
                             break;
                     }
                     System.out.println("");
+                    break;
                 case 4:
                     System.exit(0);
                     System.out.println("");
