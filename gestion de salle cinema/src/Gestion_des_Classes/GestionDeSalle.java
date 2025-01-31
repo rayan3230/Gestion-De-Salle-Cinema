@@ -55,4 +55,12 @@ public class GestionDeSalle {
              }
          }
      }
+
+     public void DisplaySalleDispo(){
+         for (Salle salle : salles) {
+             if (salle.Available == true) {
+                 System.out.println("Salle ID : " + salle.SalleId + ", Capacité normale : " + salle.NormalCapacity + ", Capacité VIP : " + salle.VipCapacity);
+             }
+         }
+     }
 }
