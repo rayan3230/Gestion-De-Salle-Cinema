@@ -4,7 +4,7 @@ import java.sql.Date;
 import java.time.LocalTime;
 
 public class Diffusion {
-    public int idDiffusion = 0;
+    public int idDiffusion;
     public int year;
     public int month;
     public int jour;
@@ -18,7 +18,7 @@ public class Diffusion {
     public int minutefin;
     public LocalTime timefin = LocalTime.of(this.hourfin, this.minutefin);
 
-    public Diffusion(Date date, Film film, Salle salle, int hourdebut, int minutedebut, int idDiffusion) {
+    public Diffusion(Date date, Film film, Salle salle, int hourdebut, int minutedebut) {
 
         this.idDiffusion++;
         this.date = date;
