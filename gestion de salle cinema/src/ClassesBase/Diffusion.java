@@ -1,11 +1,10 @@
 package ClassesBase;
 
-import java.util.Date;
-import java.time.LocalTime;
-
 public class Diffusion {
-
-    public Date date = new Date(int year, int month, int jour);
+    public int year;
+    public int month;
+    public int jour;
+    public Date date = new Date(year, month, jour);
     public Film film;
     public Salle salle;
     public LocalTime timedebut = LocalTime(int hourdebut, int minutedebut);
