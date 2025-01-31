@@ -4,6 +4,7 @@ public class Film {
     public String TitreFilm;
     public int dureeFilm;
     public String genre;
+    public boolean isAvailable = true;
 
     enum genre {
         Vo, Vf
