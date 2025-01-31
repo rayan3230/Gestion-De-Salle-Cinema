@@ -14,8 +14,8 @@ public class billet {
     //Methods
     public billet(Diffusion DIFF){
 
-        this.numbilletNormal = DIFF.salle.capacitéNormal;
-        this.numbilletVip = DIFF.salle.capacitéVIP;
+        this.numbilletNormal = DIFF.salle.capaciteNormal;
+        this.numbilletVip = DIFF.salle.capaciteVIP;
 
     }
  
