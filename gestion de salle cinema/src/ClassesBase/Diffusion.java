@@ -24,7 +24,6 @@ public class Diffusion {
         this.timedebut = timedebut;
 
         if (this.minutedebut + film.dureeFilm % 60 > 60) {
-
             this.minutefin = this.minutedebut + film.dureeFilm % 60;
             this.hourfin = this.hourdebut + film.dureeFilm / 60 + 1;
         } else {
