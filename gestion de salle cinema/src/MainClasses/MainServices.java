@@ -1,11 +1,9 @@
 package MainClasses;
 
+import ClassesBase.*;
 import Gestion_des_Classes.*;
-
 import java.sql.Date;
 import java.util.Scanner;
-
-import ClassesBase.*;
 
 public class MainServices {
     // VARIABLES ----------------------------------------------------------------
@@ -172,7 +170,7 @@ public class MainServices {
                             System.out.println("");
                             break;
                     }
-
+                    break;
                 case 3:
                     System.out.println("1- Créer une diffusion");
                     System.out.println("2- Modifier une diffusion");
