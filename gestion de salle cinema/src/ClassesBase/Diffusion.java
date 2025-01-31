@@ -1,8 +1,7 @@
 package ClassesBase;
 
-import java.time.LocalTime;
-
 import java.sql.Date;
+import java.time.LocalTime;
 
 public class Diffusion {
     public int year;
@@ -18,19 +17,22 @@ public class Diffusion {
     public int minutefin;
     public LocalTime timefin = LocalTime.of(this.hourfin, this.minutefin);
 
-    if(minutedebut+film.duree%60>60)
-    {
-        minutefin = this.minutedebut + film.dureeFilm % 60;
-        hourfin = this.hourdebut + film.dureeFilm / 60 + 1;
-    }else{
-        minutefin = this.minutedebut + film.dureeFilm % 60;
-        hourfin = this.hourdebut + film.dureeFilm / 60;
-    }
+    
 
     public Diffusion(Date date, Film film, Salle salle, LocalTime timedebut) {
         this.date = date;
         this.film = film;
         this.salle = salle;
         this.timedebut = timedebut;
+    }
+    public void CalculateTimeFin(){
+                if(minutedebut+film.dureeFilm%60>60){
+                
+                minutefin = this.minutedebut + film.dureeFilm % 60;
+                hourfin = this.hourdebut + film.dureeFilm / 60 + 1;
+                }else{
+                minutefin = this.minutedebut + film.dureeFilm % 60;
+                hourfin = this.hourdebut + film.dureeFilm / 60;
+                }
     }
 }
