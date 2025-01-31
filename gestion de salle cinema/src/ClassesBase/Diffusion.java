@@ -27,13 +27,12 @@ public class Diffusion {
         this.timedebut = timedebut;
     }
     public void CalculateTimeFin(){
-                if(minutedebut+film.dureeFilm%60>60){
-                
-                minutefin = this.minutedebut - 60 + film.dureeFilm % 60;
-                hourfin = this.hourdebut + film.dureeFilm / 60 + 1;
-                }else{
-                minutefin = this.minutedebut + film.dureeFilm % 60;
-                hourfin = this.hourdebut + film.dureeFilm / 60;
-                }
+        if(minutedebut+film.dureeFilm%60>60){ 
+            minutefin = this.minutedebut - 60 + film.dureeFilm % 60;
+            hourfin = this.hourdebut + film.dureeFilm / 60 + 1;
+        }else{
+            minutefin = this.minutedebut + film.dureeFilm % 60;
+            hourfin = this.hourdebut + film.dureeFilm / 60;
+        }
     }
 }
