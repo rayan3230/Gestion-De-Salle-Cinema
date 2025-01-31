@@ -1,7 +1,7 @@
 public class Film {
-    String TitreFilm;
-    int duréeFilm;
-    String genre;
+    public String TitreFilm;
+    public int duréeFilm;
+    public String genre;
     enum genre{
         Vo,
         Vf
