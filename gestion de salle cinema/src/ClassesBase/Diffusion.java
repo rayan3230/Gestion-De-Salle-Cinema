@@ -24,13 +24,7 @@ public class Diffusion {
         this.salle = salle;
         this.timedebut = timedebut;
 
-        if (minutedebut + film.dureeFilm % 60 > 60) {
-            minutefin = this.minutedebut + film.dureeFilm % 60;
-            hourfin = this.hourdebut + film.dureeFilm / 60 + 1;
-        } else {
-            minutefin = this.minutedebut + film.dureeFilm % 60;
-            hourfin = this.hourdebut + film.dureeFilm / 60;
-        }
+       
     }
 
     public void CalculateTimeFin() {
