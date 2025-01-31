@@ -23,7 +23,7 @@ public class GestionDeSalle {
         }
     }
 
-    public void horsService(int salleID) {
+    public void MeethorsService(int salleID) {
         for (Salle salle : salles) {
             if (salle.SalleId == salleID) {
                 salle.Available = false;
@@ -33,6 +33,18 @@ public class GestionDeSalle {
             }
         }
     }
+    public void RemettreEnService(int salleID) {
+        for (Salle salle : salles) {
+            if (salle.SalleId == salleID) {
+                salle.Available = true;
+                return;
+            } else {
+                System.out.println("Salle n'existe pas");
+            }
+        }
+    }
+
+
 
     public void AfficherSalleDispo(int salleID) {
         for (Salle salle : salles) {
