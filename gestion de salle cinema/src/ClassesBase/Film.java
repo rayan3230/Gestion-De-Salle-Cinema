@@ -1,3 +1,4 @@
+package ClassesBase;
 public class Film {
     public String TitreFilm;
     public int duréeFilm;
