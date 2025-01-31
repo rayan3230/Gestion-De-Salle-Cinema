@@ -9,8 +9,8 @@ import java.util.Scanner;
 
 public class GestionDiffusions {
 
-    ArrayList<Diffusion> Diffusions = new ArrayList<Diffusion>();
-    public int DiffusionCount = -1;
+    public ArrayList<Diffusion> Diffusions = new ArrayList<Diffusion>();
+    public int DiffusionCount = 0;
 
     public GestionDeSalle RoomsManagement;
     public Scanner Scan = new Scanner(System.in);
@@ -34,20 +34,16 @@ public class GestionDiffusions {
     }
 
     public void ModifierDiffusion(int idDiffusion) {
-        for (Diffusion diffusion : Diffusions) {
-            if (diffusion.idDiffusion == idDiffusion) {
-
-                return;
-            }
+        if (Diffusions.get(idDiffusion).idDiffusion == idDiffusion) {
+            return;
         }
+
     }
 
     public void SupprimerDiffusion(int idDiffusion) {
-        for (Diffusion diffusion : Diffusions) {
-            if (diffusion.idDiffusion == idDiffusion) {
-                Diffusions.remove(diffusion);
-                return;
-            }
+        if (Diffusions.get(idDiffusion).idDiffusion == idDiffusion) {
+            Diffusions.remove(idDiffusion);
+            return;
         }
     }
 }
