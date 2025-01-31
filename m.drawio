@@ -1,0 +1,13 @@
+<mxfile host="65bd71144e">
+    <diagram id="Jkh-uVV57qmhIs3wSYzl" name="Page-1">
+        <mxGraphModel dx="820" dy="611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;span style=&quot;font-size: 199px; text-align: left; background-color: oklab(0.0846607 0.00000385568 0.00000169128 / 0.06);&quot;&gt;اخرج قود&lt;/span&gt;" style="text;align=center;html=1;verticalAlign=top;rounded=0;strokeWidth=8;fontSize=199;fontStyle=0;fontFamily=Verdana;horizontal=1;fontColor=#F00C0C;" vertex="1" parent="1">
+                    <mxGeometry x="163" y="100" width="525" height="270" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
