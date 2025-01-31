@@ -1,11 +1,9 @@
 package MainClasses;
 
+import ClassesBase.*;
 import Gestion_des_Classes.*;
-
 import java.sql.Date;
 import java.util.Scanner;
-
-import ClassesBase.*;
 
 public class MainServices {
     // VARIABLES ----------------------------------------------------------------
@@ -176,7 +174,6 @@ public class MainServices {
                     }
                     System.out.println("");
                     break;
-
                 case 3:
 
                     int choixDiffusion;
