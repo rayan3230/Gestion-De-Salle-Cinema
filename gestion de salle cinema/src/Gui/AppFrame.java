@@ -19,7 +19,7 @@ public class AppFrame extends JFrame {
         this.setSize(1100, 700);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
-        this.setResizable(false);
+        this.setResizable(true);
 
         // Ajout de l'icone de l'application
         ImageIcon img = new ImageIcon("CinemaLogo.png");
