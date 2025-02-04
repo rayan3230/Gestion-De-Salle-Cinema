@@ -45,7 +45,7 @@ public class GuiMain {
     private static JLabel CreatOptionLable() {
 
         // Création des Lables
-        JLabel OptionLable = new JLabel("App Fuctionalities");
+        JLabel OptionLable = new JLabel("App Fuctionalities :");
 
         // changement de la couleur du lable
         OptionLable.setForeground(new java.awt.Color(255, 255, 255));
@@ -67,15 +67,15 @@ public class GuiMain {
         // creation d'un panel
         JPanel OptionPanel = new JPanel();
 
-        // changement de la couleur du panel
-        OptionPanel.setBackground(new java.awt.Color(20, 20, 20));
-
-        // changement de la position du panel
-        OptionPanel.setBounds(0, 0, 200, 700);
-
         // Ajout du text
         JLabel OptionLable = CreatOptionLable();
         OptionPanel.add(OptionLable);
+
+        // changement de la couleur du panel
+        OptionPanel.setBackground(new java.awt.Color(30, 30, 30));
+
+        // changement de la position du panel
+        OptionPanel.setBounds(0, 0, 200, 700);
 
         return OptionPanel;
     }
@@ -96,7 +96,6 @@ public class GuiMain {
         Frame.add(OptionPanel);
 
         // Ajout des Lables
-        Frame.add(OpenningLable);
 
     }
 
