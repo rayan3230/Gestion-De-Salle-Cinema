@@ -12,6 +12,16 @@ import javax.swing.border.Border;
 
 public class GuiMainWithMoza extends JFrame {
 
+    public static GestionBills getGestionBills = new GestionBills();
+    public static GestionDiffusions getGestionDiffusion = new GestionDiffusions();
+    public static GestionFilm getGestionFilm = new GestionFilm();
+    public static GestionDeSalle getGestionSalle = new GestionDeSalle();
+    public static Diffusion getDiffusion;
+    public static Film getFilm;
+    public static Salle getSalle;
+    public static billet getBill;
+    public static Scanner Scan = new Scanner(System.in);
+
     public GuiMainWithMoza(String name) {
 
         // Création de la fenêtre principale
@@ -23,8 +33,8 @@ public class GuiMainWithMoza extends JFrame {
         this.setResizable(true);
 
         // Ajout de l'icone de l'application
-        ImageIcon img = new ImageIcon("CinemaLogo.ico");
-        this.setIconImage(img.getImage());
+        ImageIcon icon = new ImageIcon("CinemaLogo.png");
+        this.setIconImage(icon.getImage());
 
         // changer la couleur de l'application
         this.getContentPane().setBackground(new java.awt.Color(225, 225, 225));
