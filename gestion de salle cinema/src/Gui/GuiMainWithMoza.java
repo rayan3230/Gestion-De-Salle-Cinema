@@ -40,6 +40,8 @@ public class GuiMainWithMoza extends JFrame {
         this.getContentPane().setBackground(new java.awt.Color(225, 225, 225));
     }
 
+    // Création des objets
+
     public static void main(String[] args) {
         // Création de la fenêtre principale
         GuiMainWithMoza Frame = new GuiMainWithMoza("Gestion de salle de cinema");
